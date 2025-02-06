@@ -7,7 +7,6 @@ import br.com.factory.animais.animalfactory.PitbullFactory;
 import static java.util.Objects.nonNull;
 
 public class ClientApp {
-
     private static AnimalFactory animalFactory;
 
     public static void main(String[] args) {
@@ -16,15 +15,19 @@ public class ClientApp {
 
         tipoAnimal(animal);
 
-        if (nonNull(animalFactory)){
+        if (nonNull(animalFactory)) {
 //  metodo da Factory para criar o animal
-            animalFactory.fabricarAnimal();
+            criarAnimal();
         }
+    }
+
+    private static void criarAnimal() {
+        animalFactory.fabricaAnimal();
     }
 
     //Cria o animal com base no tipo selecionado
     private static void tipoAnimal(String animal) {
-        switch (animal){
+        switch (animal) {
             case "Beija_Flor":
                 animalFactory = new BeijaFlorFactory();
                 break;

@@ -1,4 +1,4 @@
-package br.com.factory.contacorrente;
+package br.com.factory.contacorrente.factory;
 
 import br.com.factory.contacorrente.segmentos.ISegmentos;
 import br.com.factory.contacorrente.segmentos.PessoaFisica;

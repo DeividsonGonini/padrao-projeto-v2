@@ -1,10 +1,10 @@
-package br.com.factory.contacorrente;
+package br.com.factory.contacorrente.factory;
 
 import br.com.factory.contacorrente.segmentos.ISegmentos;
 
 public abstract class AberturaContaFactory {
 
-    void abrirConta(){
+    public void abrirConta() {
         ISegmentos segmento = criarContaCorrente();
         segmento.criarContaCorrente();
     }

@@ -6,7 +6,7 @@ import br.com.factory.animais.animal.IAnimais;
 public abstract class AnimalFactory {
 
     //Cria genericamente um animal
-    void fabricarAnimal(){
+    public void fabricaAnimal(){
         IAnimais animal = animalCriado();
         //metodo da Interface para criar animais
         animal.criarAnimal();

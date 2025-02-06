@@ -1,5 +1,9 @@
 package br.com.factory.contacorrente;
 
+import br.com.factory.contacorrente.factory.AberturaContaFactory;
+import br.com.factory.contacorrente.factory.PessoaFisicaAberturaConta;
+import br.com.factory.contacorrente.factory.PessoaJuridicaAberturaConta;
+
 import static java.util.Objects.nonNull;
 
 public class ClientApp {
@@ -10,6 +14,7 @@ public class ClientApp {
         var tipoPessoa = "PessoaJuridica";
 
         tipoConta(tipoPessoa);
+
         if (nonNull(aberturaContaFactory)) {
             abrirConta();
         }
